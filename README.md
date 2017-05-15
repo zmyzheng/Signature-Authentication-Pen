@@ -15,6 +15,11 @@ The MetawearC collects acceleration and angular velocity. Attach MetawearC to a 
 
 ![](diagram.png)
 
+
+## Flow Chart
+
+![](workflow.png)
+
 ## Hardware 
 
 [MetawearC](https://mbientlab.com/product/metawearc/) 
