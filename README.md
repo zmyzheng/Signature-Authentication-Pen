@@ -46,3 +46,30 @@ As MetawearC transmit data by Bluetooth, We design an Android App utilizing the 
 
 The server was built using Flask deployed on AWS EC2 for wireless device. In training mode, after receiving the posted data from Android App, the server do data cleaning first then store the cleaned data into a csv file. Then it reads the csv file and train the neural network. The trained weights will be stored into a file with hdf5 format. In testing mode, the neural network loads the trained weight of the network and make prediction for each received data. Then it responds the Android App with the result of prediction.
 
+## Code description
+
+### Prerequisites
+
+Pyothon3
+
+tensorflow: pip install tensorflow
+
+Keras: pip install keras
+
+Flask: pip install flask
+
+Android studio
+
+### Run the code
+
+1. install the Android App on your phone
+
+2. start the server:
+
+go to directory server
+
+for training: python3 server.py train
+
+for predition: python3 server.py test
+
+
