@@ -32,3 +32,12 @@ Normalize
 Neural network is designed using Keras. Each of the layer is full-connected. Except the output layer, other layers use Relu as activation function. To avoid the problem of overfitting, we add dropout of 0.1 in the last two layers.
 
 ![](neural_network_architecture.png)
+
+### Android App
+
+As MetawearC transmit data by Bluetooth, We design an Android App utilizing the API from Metawear SDK. After the MetawearC is connected with the phone by Bluetooth, when clicking start button, the MetawearC starts collecting acceleration and angular velocity and save them into RAM. When clicking stop button, MetawearC stops collecting data and POST the data into server. The length of data will be displayed by Toasts. After receiving the response from the server, the App will display the result of prediction, namely, the name of the user in real time identity recognition mode or true/flase in fake signature distinguishing mode.
+
+### server
+
+The server was built using Flask deployed on AWS EC2 for wireless device. In training mode, after receiving the posted data from Android App, the server do data cleaning first then store the cleaned data into a csv file. Then it reads the csv file and train the neural network. The trained weights will be stored into a file with hdf5 format. In testing mode, the neural network loads the trained weight of the network and make prediction for each received data. Then it responds the Android App with the result of prediction.
+
