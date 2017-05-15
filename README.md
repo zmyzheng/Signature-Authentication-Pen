@@ -31,4 +31,4 @@ Normalize
 
 Neural network is designed using Keras. Each of the layer is full-connected. Except the output layer, other layers use Relu as activation function. To avoid the problem of overfitting, we add dropout of 0.1 in the last two layers.
 
-![](neural network architecture.png)
+![](neural_network_architecture.png)
