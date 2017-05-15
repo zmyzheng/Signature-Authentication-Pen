@@ -1,6 +1,7 @@
 # Signature-Authentication-Pen
 
-This responsory is for IOT project Signature Authentication Pen
+This responsory is for IOT project Signature Authentication Pen. A demo can be seen at https://youtu.be/xxnGFsNmaTY
+
 
 ## Introdution
 
@@ -14,3 +15,4 @@ The MetawearC collects acceleration and angular velocity. Attach MetawearC to a 
 
 ## Hardware 
 
+[MetawearC](https://mbientlab.com/product/metawearc/) 
