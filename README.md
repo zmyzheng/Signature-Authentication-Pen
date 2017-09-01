@@ -1,6 +1,6 @@
 # Signature-Authentication-Pen
 
-This responsory is for IOT project Signature Authentication Pen. A demo can be seen at https://youtu.be/xxnGFsNmaTY
+This responsory is for IOT project Signature Authentication Pen. A demo can be seen at http://iotcolumbia2017gzsl.weebly.com/
 
 
 ## Introdution
